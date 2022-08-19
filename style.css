@@ -1,0 +1,113 @@
+body {
+    background-color: rgb(255, 255, 255);
+}
+
+#theme {
+    display: flex;
+    width: 80%;
+    margin: auto;
+    justify-content: space-between;
+}
+
+#nameHeader {
+    margin: 0;
+    padding: 0;
+    font-family: 'Silkscreen', cursive;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    margin-top: 11px;
+    width: 80px;
+    height: 33px;
+    padding: 0.6px 0px;
+    background-color: #111;
+    border-radius: 120px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transition: .4s;
+    display: flex;
+    justify-content: space-around;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 29px;
+    width: 34px;
+    left: 3px;
+    bottom: 3px;
+    top: 3px;
+    background-color: rgb(255, 255, 255);
+    transition: .4s;
+    border-radius: 100px;
+}
+
+input:checked+.slider:before {
+    transform: translateX(40px);
+}
+
+#filme {
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+}
+
+#sobre {
+    width: 30%;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.63);
+    padding: 20px;
+    border-radius: 20px;
+
+    /* color: rgb(170, 170, 170); */
+    border-radius: 0px 10px 10px 0px;
+
+}
+
+#filmeImage {
+    max-width: 30%;
+    border-radius: 10px 0px 0px 10px;
+    box-shadow: -10px 7px 10px black;
+}
+
+#filmeNome {
+    font-family: 'PT Serif', serif;
+    /* font-family: 'Silkscreen', cursive; */
+}
+
+#descricao {
+    font-family: 'Montserrat', light;
+    font-size: 18px;
+    text-align: left;
+    padding: 4px;
+
+}
+
+#buscaFilme {
+    width: 400px;
+    height: 60px;
+    margin: 80px;
+    margin-left: 30%;
+    border: none;
+    background: rgb(2, 0, 36);
+    color: white;
+    font-family: 'Silkscreen', cursive; 
+    font-size: 1.5rem;
+    border-radius: 20px;
+}
